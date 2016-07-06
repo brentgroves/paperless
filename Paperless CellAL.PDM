@@ -1,0 +1,135 @@
+[Root]
+Most Recent Package=Standard Setup Paperless
+
+
+[Package|Standard Setup Paperless|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\src\ALPaperless\Package
+
+[Package|Standard Setup Paperless|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Paperless|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Paperless|Files Found]
+
+[Package|Standard Setup Paperless|Files Released]
+
+[Package|Standard Setup Paperless|Missing Dependency Information]
+C:\vb6src\digitbox\DigitBox.ocx=
+C:\vb6src\LED\LED.ocx=
+C:\WINDOWS\system32\vbalIml6.ocx=
+C:\WINDOWS\system32\vbalLBar6.ocx=
+C:\Program Files\Common Files\Adobe\Acrobat\ActiveX\AcroPDF.dll=
+C:\WINDOWS\system32\wmp.dll=
+
+[Package|Standard Setup Paperless|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\COMCT332.OCX=
+C:\WINDOWS\system32\mscomct2.ocx=
+C:\WINDOWS\system32\scrrun.dll=
+C:\Program Files\Common Files\Business Objects\3.0\crystalreportviewers11\ActiveXControls\crviewer.dll=
+
+[Package|Standard Setup Paperless|Files Added]
+
+[Package|Standard Setup Paperless|Files Removed]
+
+[Package|Standard Setup Paperless|Files In Project]
+C:\src\ALPaperless\Paperless Cell.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\Business Objects\3.0\crystalreportviewers11\ActiveXControls\crviewer.dll=Yes
+C:\Program Files\Common Files\Business Objects\3.0\bin\craxdrt.dll=Yes
+C:\Program Files\Common Files\Business Objects\3.0\bin\GdiPlus.dll=Yes
+C:\WINDOWS\system32\usp10.dll=Yes
+C:\WINDOWS\system32\wmp.dll=Yes
+C:\Program Files\Common Files\Adobe\Acrobat\ActiveX\AcroPDF.dll=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+C:\WINDOWS\system32\mscomct2.ocx=Yes
+C:\WINDOWS\system32\COMCT332.OCX=Yes
+C:\WINDOWS\system32\vbalLBar6.ocx=Yes
+C:\WINDOWS\system32\vbalIml6.ocx=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSWINSCK.OCX=Yes
+C:\vb6src\LED\LED.ocx=Yes
+C:\vb6src\digitbox\DigitBox.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Paperless|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Paperless|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Paperless|Install Locations]
+C:\src\ALPaperless\Paperless Cell.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\Business Objects\3.0\crystalreportviewers11\ActiveXControls\crviewer.dll=$(CommonFiles)\Business Objects\3.0\crystalreportviewers11\ActiveXControls
+C:\Program Files\Common Files\Business Objects\3.0\bin\craxdrt.dll=$(CommonFiles)\Business Objects\3.0\bin
+C:\Program Files\Common Files\Business Objects\3.0\bin\GdiPlus.dll=$(CommonFiles)\Business Objects\3.0\bin
+C:\WINDOWS\system32\usp10.dll=$(WinSysPath)
+C:\WINDOWS\system32\wmp.dll=$(AppPath)
+C:\Program Files\Common Files\Adobe\Acrobat\ActiveX\AcroPDF.dll=$(WinSysPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mscomct2.ocx=$(WinSysPath)
+C:\WINDOWS\system32\COMCT332.OCX=$(WinSysPath)
+C:\WINDOWS\system32\vbalLBar6.ocx=$(WinSysPath)
+C:\WINDOWS\system32\vbalIml6.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\vb6src\LED\LED.ocx=$(WinSysPath)
+C:\vb6src\digitbox\DigitBox.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Paperless|Configure Shared Files]
+Applicable=Yes
+C:\src\ALPaperless\Paperless Cell.exe=No
+C:\WINDOWS\system32\wmp.dll=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Standard Setup Paperless|Distribution]
+Type=single
+Size=
+Title=Paperless Cell
+
+[Package|Standard Setup Paperless|IconGroups]
+Group0=Paperless Cell
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Paperless|Paperless Cell]
+Icon1="Paperless Cell.exe"
+Title1=Paperless Cell
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Paperless|Package]
+PackageFolder=C:\src\ALPaperless\Package
+ProjectFolder=C:\src\ALPaperless
+ServerSideCab=
+File1=C:\src\ALPaperless\Package\setup.exe
+File2=C:\src\ALPaperless\Package\Setup.Lst
+File3=C:\src\ALPaperless\Package\Paperless Cell.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

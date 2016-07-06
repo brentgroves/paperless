@@ -1,0 +1,84 @@
+lastCncCycle = 1363345200000
+lastUpdate = 1363364700000
+lastUpdateTickCount = 285546656
+lastUpdateTime = 3:31:20 PM
+
+SET UP CNC152 FOR TESTING WITH TODAYS VERSION OF DNC LOGGER AND PRODCELL POINT TO ROBOGROVES AND TEST
+WORK ON LOGGER SUBSCRIBING TO A CHANNEL
+Work on connect bug
+Validation: unplug the network cable 
+- when part is selected
+- when no part is selected
+- when screen saver is on
+- when document is being displayed
+- when cnc screen is up
+* in all cases the make connection dialog should be displayed until the network cable is reconnected.
+
+DoEvents explained: http://stackoverflow.com/questions/4526659/what-does-doevents-do-in-vb6
+
+frmBackground.Timer1 
+- interval 3 secs
+- Enabled when frmBackGround loads
+- Disabled when frmBackGround shows frmScreenSaver after 3 sec interval
+
+Mainform.Timer1
+-interval 5 milliseconds
+KeyToSend = PGDN
+If DocListView Then
+        Me.Crviewer2.SetFocus
+        Timer1.Enabled = True
+LeftViewer
+RightViewer
+- After CrViewer1,CrViewer2,AcroPDF(0),(1), or (2) gets focus
+acropdf(2) is for the larger view
+this timer will send the pgdn,pgup,etc keys after focus has been set
+
+Mainform.timer2
+-interval 500 ms
+-functions sends ^h key
+basically trying to process all remaining events before hiding one of the
+acropdf viewers
+
+Mainform.timer3
+interval 20 sec
+if IdleTime has not been updated in the past 20 seconds then the refreshcmd is 
+processed.
+then call the refresh command
+    If IdleTime < DateAdd("n", -20, Now) Then
+        RefreshCMD_Click
+        IdleTime = Now
+    End If
+
+
+ IDLETIME 
+ set to now after RefreshCMD, documentlist, mainform.load,
+ partselectcombo clicked, listbaritem clicked, any navigation key pressed
+mouse is moved when screensaver is loaded
+
+Mainform.timerscreenSaver
+interval 15 secs
+Because of this the refresh command never runs if there is a partnumber selected which
+has quality alerts because the screensaver deactivates timer3 when it runs.  The fix may be
+to enable timer3 when the screen saver is displayed.
+When we have network problems makeconnections will be called and the screensaver will not be 
+loaded
+
+Mainform.timer4
+interval 1 sec
+Timer4.Enabled = False
+DoEvents
+MakeConnections
+
+This is called from makeconnections in the case of a connection problem.  So every 1
+sec MakeConnections will be called until the network comes up.
+
+Mainform.timer5
+interval 500 ms
+prevents the documentList and ListbarItem buttons from being processed more than once every 1/2 second
+
+Pieces.TimerCncPicker
+interval 10 sec
+closes the cnc picker dialog box
+
+BUG:
+ListBar_ItemClick - Check out this function to find out where the icons are getting set for each document.

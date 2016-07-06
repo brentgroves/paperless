@@ -1,0 +1,9 @@
+ReconnectForm = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmScreenSaver = 9, 67, 1281, 633, , 0, 0, 0, 0, C
+frmBackGround = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+MainForm = 66, 78, 866, 546, , 44, 52, 844, 520, C
+Module1 = 22, 26, 822, 494, 
+cStringBuilder = 0, 0, 0, 0, C
+JSON = 0, 0, 0, 0, C
+PieceCount = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+Pieces = 0, 0, 0, 0, C, 0, 0, 0, 0, C
